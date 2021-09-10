@@ -1214,6 +1214,12 @@ footer p {
 		font-size: 15px;
 		margin-top: 25px;
 	}
+	.services-info__header {
+		font-size: 40px !important;
+	}
+	.services-list__info {
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 440px) {
