@@ -39,7 +39,9 @@
 
 				<a href="tel:+74999955577"class="header_phone-number">
 					<i class="fas fa-phone-alt"></i>+7 (499) 995-55-77</a>
-				<button class="call-button" href="#">Заказать звонок</button>	
+				<a href="#popup2">
+					<button class="call-button" href="#">Заказать звонок</button>	
+				</a>
 			</div>
 		</header>	
 </section>
@@ -277,7 +279,7 @@
 					Мы вам перезвоним!
 				</div>
 				<form>
-				<input class="popup__input" type="tel" placeholder="+7 (999) 999-99-99">
+				<input class="popup__input" type="tel" placeholder="+7 (999) 999-99-99" required  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Знаки: +, -, (, ), цифры от 0 до 9 ">
 				<button class="popup__button">Отправить</button>
 				</form>
 			</div>
