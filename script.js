@@ -31,3 +31,18 @@ new Swiper('.swiper-container' , {
     },
   },
 });
+
+let reg = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+
+let inp = document.querySelector('.popup__input');
+
+document.querySelector('.popup__button').onclick = function(e){
+	e.preventDefault();
+	if(!reg.test(inp.value)) {
+		console.log('Wrong symbols');
+	} else {
+		console.log('OK');
+	}
+
+
+};
