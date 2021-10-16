@@ -279,7 +279,7 @@
 					Мы вам перезвоним!
 				</div>
 				<form>
-				<input class="popup__input" type="tel" placeholder="+7 (999) 999-99-99" required  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="Знаки: +, -, (, ), цифры от 0 до 9 ">
+				<input class="popup__input" type="tel" placeholder="+7 (999) 999-99-99" required pattern="^[ 0-9]+$" value="+" onkeyup="this.value = this.value.replace(/[^\d+-/()]/g,'');" title="Знаки: +, -, (, ), цифры от 0 до 9 ">
 				<button class="popup__button">Отправить</button>
 				</form>
 			</div>
