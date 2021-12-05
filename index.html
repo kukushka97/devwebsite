@@ -252,12 +252,10 @@
 			<p>&copy; Дмитрий Алексеев, 2020</p>
 		
 	</footer>
-	<script src="jquery.js"></script>
-	<script src="dist/jquery.inputmask.js"></script>
+	<script src="common.js"></script>
+	<script src="jquery.maskedinput.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>                <!-- swiper -->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>			 <!-- swiper -->
-	<script src="script.js"></script>
-	<script src="common.js"></script>
 	<div class="popup" id="popup">													<!-- popup #1 -->
 		<div class="popup__body">
 			<div class="popup__content">
@@ -282,7 +280,7 @@
 					Мы вам перезвоним!
 				</div>
 				<form>
-				<input class="popup__input" type="tel" data-validate-field="tel"  title="Цифры от 0 до 9" >
+				<input class="popup__input" id="phone" type="tel" data-validate-field="tel"  title="Цифры от 0 до 9" >
 				<button class="popup__button">Отправить</button>
 				</form>
 			</div>
